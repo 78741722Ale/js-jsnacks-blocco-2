@@ -11,29 +11,23 @@ console.log(arrayFName, arraySName);
 
 
 // Scegliamo un nome random dal primo array
-randomName = Math.floor(Math.random() * arrayFName.length);
-console.log(randomName, arrayFName[randomName]);
+// randomName = Math.floor(Math.random() * arrayFName.length);
+// console.log(randomName, arrayFName[randomName]);
 // Scegliamo un cognome random dal secondo array
-randomLastName = Math.floor(Math.random() * arraySName.length);
-console.log(arraySName, arraySName[randomLastName]);
-
-console.clear();
+// randomLastName = Math.floor(Math.random() * arraySName.length);
+// console.log(arraySName, arraySName[randomLastName]);
 
 // lista di nomi fuori dalla lista (vuoto)
-const arrayFake = [];
+const arrayFake = [""];
 
 let i = 0;
 
-while (i <= arrayFake) { 
-    const fakeNameComplete = randomLastName + ' ' + randomName;
-    console.log(fakeNameComplete);
+while (i <= arrayFName) { 
+    const fakeNameComplete = arrayFName[i] + arraySName[i];
+    arrayFake.push("fakeNameComplete")
+    console.log(arrayFake);
     // Console Log
 
-
-    // arrayFake.push[i];
-    // Console Log
-    // console.log(arrayFake);
-    // N volte che esegue ciclo
     i++
 }
 
