@@ -22,12 +22,13 @@ const arrayFake = [""];
 
 let i = 0;
 
-while (i <= arrayFName) { 
-    const fakeNameComplete = arrayFName[i] + arraySName[i];
-    arrayFake.push("fakeNameComplete")
-    console.log(arrayFake);
+while (i <= arrayFName.length) { 
+    const fakeNameComplete = arrayFName[i] + ' ' + arraySName[i];
+    // Push dal nome fake
+    arrayFake.push(fakeNameComplete)
     // Console Log
-
+    console.log(arrayFake);
+    // Ripetizione necessaria
     i++
 }
 
